@@ -2,10 +2,10 @@
 This package converts the EMR stereo camera's original image to 2 seperate images. 
 
 ## Input and output
-Subscribe:
+Subscribe\n
 /usb_cam/image_raw
 
-Publish:
+Publish\n
 /mono2stereo/left_original
 /mono2stereo/right_original
 /mono2stereo/left_360p
@@ -14,5 +14,6 @@ Publish:
 /mono2stereo/right_rect
 
 ## Note
-The rectification is done according to pre-calibrated parameters. 
+The rectification is done according to pre-calibrated camera intrinsic parameters from 360p images.
 You can modify them in "setting_left_360p.yaml" and "setting_left_360p.yaml".
+Make sure you use the pinhole-equi or fisheye model to calibrate this camera.
